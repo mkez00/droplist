@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	log.Println("Starting Blacklist import")
+	log.Println("Starting Droplist import")
 	droplist.FetchAndApply()
-	log.Println("Finished Blacklist import")
+	log.Println("Finished Droplist import")
 }
