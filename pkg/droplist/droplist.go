@@ -41,7 +41,8 @@ func GetDropList() *http.Response {
 	return response
 }
 
-// Takes a file (Drophaus and iterates
+// Takes a file and iterates (Spamhaus DROP list specific requirements)
+// TODO create interface and implement for specifc Spamhaus DROP list file for now
 func IterateAndDeny(file *os.File){
 	// iterate through lines of file
 	scanner := bufio.NewScanner(file)

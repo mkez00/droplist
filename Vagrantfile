@@ -16,6 +16,7 @@ Vagrant.configure("2") do |config|
       unzip droplist.zip
 
       echo "y" | ufw enable
+      ufw allow ssh
       /opt/droplist/resources/droplist
 
   	SHELL
