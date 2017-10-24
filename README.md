@@ -1,6 +1,6 @@
 # droplist
 
-Go application that configures firewall to block IP addresses from [Spamhaus DROP list](https://www.spamhaus.org/drop/drop.txt){:target="_blank"}
+Go application that configures firewall to block IP addresses from <a href="https://www.spamhaus.org/drop/drop.txt" target="_blank">Spamhaus DROP list</a>
 
 ## Outstanding Items
 1) Clear previously run entries before running next batch (this will make utility idempotent)
@@ -12,7 +12,7 @@ Go application that configures firewall to block IP addresses from [Spamhaus DRO
 
 ## Download
 
-Binary download for Linux AMD64: [Download](https://github.com/mkez00/droplist/raw/master/resources/droplist.zip){:target="_blank"}
+Binary download for Linux AMD64: <a href="https://github.com/mkez00/droplist/raw/master/resources/droplist.zip" target="_blank">Download</a>
 
 ## Vagrant
 
