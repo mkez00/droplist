@@ -14,6 +14,7 @@ import (
 
 const DropListUrl = "https://www.spamhaus.org/drop/drop.txt";
 
+// Function that completes the task of fetching the drop list and applying it to the firewall
 func FetchAndApply(){
 	response := GetDropList()
 	defer response.Body.Close()
@@ -25,6 +26,7 @@ func FetchAndApply(){
 	IterateAndDeny(file)
 }
 
+// Fetches the droplist
 func GetDropList() *http.Response {
 	// if user is not overriding drop list url use default
 	dropListUrl := os.Getenv("DROPLISTURL")
@@ -39,6 +41,7 @@ func GetDropList() *http.Response {
 	return response
 }
 
+// Takes a file (Drophaus and iterates
 func IterateAndDeny(file *os.File){
 	// iterate through lines of file
 	scanner := bufio.NewScanner(file)
