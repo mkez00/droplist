@@ -12,4 +12,4 @@ Go application that configures firewall to block IP addresses from Spamhaus DROP
 
 # Download
 
-Binary download for Linux AMD64: [a relative link](/bin/droplist.zip)
+Binary download for Linux AMD64: [Download](https://github.com/mkez00/droplist/raw/master/bin/droplist.zip)
